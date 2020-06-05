@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.score-board {
+  width: 300px;
+  margin: 40px auto;
+  font-size: 40px;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+}
+
+.userLabel {
+  background: #0056e2;
+  width: 100px;
+  font-size: 16px;
+  display: inline-block;
+
+}
+
+.computerLabel {
+  background: #e2584d;
+  width: 100px;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 40px;
+}
+
