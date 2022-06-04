@@ -18,25 +18,21 @@ class App extends Component{
         }
     }
     refree(a,b){
-        if(a==b){
-            this.setState({
-                score1: this.state.score1,
-                score2: this.state.score2,
-            })
+        if(a===b){
+            return 'draw';
         }
-        else if(a==0 && b==2){
+        else if(a===0 && b===2){
             this.setState({score1: this.state.score1+1})
         }
-        else if(a==2 && b==1){
+        else if(a===2 && b===1){
             this.setState({score1: this.state.score1+1})
         }
-        else if(a==1 && b==0){
+        else if(a===1 && b===0){
             this.setState({score1: this.state.score1+1})
         }
         else{
             this.setState({score2: this.state.score2+1})
         }
-
     }
     handleClick=(x)=> {
         const min = 0;
@@ -68,13 +64,13 @@ class App extends Component{
 
 
                   <view>
-                      <button style={{width:"80px"}} onClick={() => this.handleClick(this.state.rock)}>
+                      <button className='buttons' onClick={() => this.handleClick(this.state.rock)}>
                           rock
                       </button>
-                      <button style={{width:"80px"}} onClick={() => this.handleClick(this.state.scissors)}>
+                      <button className='buttons' onClick={() => this.handleClick(this.state.scissors)}>
                           scissors
                       </button>
-                      <button style={{width:"80px"}} onClick={() => this.handleClick(this.state.paper)}>
+                      <button className='buttons' onClick={() => this.handleClick(this.state.paper)}>
                           paper
                       </button>
                   </view>
